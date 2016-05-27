@@ -3,39 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <!--<script language="javascript" type="text/javascript">-->
-    <!--window.location.href="http://www.jianshu.com/users/65e9c827c8c8/latest_articles";-->
-    <!--</script>-->
-
     <script language="javascript" type="text/javascript">
-         var deepshareUrl = null;
-         var data = {
-    name : "mkdir",
-}
-var params = {
-    inapp_data : data,
-    channels:["chanName1_chanType1_chanNumber1"],
-    sender_id : "senderID",
-    download_title : "我是download_title",
-    download_msg : "我是download_msg",
-}
-
-    window.onload = function () {
-    $.post('https://fds.so/v2/url/ae6a65bc68d73726', params, function(result) {
-        deepshareUrl = result.url
-         window.location.href=deepshareUrl;
-    }).error(function() {
-    });
-};
-
-$('#openDeepShareUrl').click(function() {
-    if(deepshareUrl != null){
-        location.href = deepshareUrl;
-    }else{
-        //出错情况下可以继续用户正常逻辑.例如可以设置直接前往APP商店
-    }
-});
-
+    window.location.href="http://www.jianshu.com/users/65e9c827c8c8/latest_articles";
     </script>
 </head>
 <body>
